@@ -1,25 +1,5 @@
-// 4 constructer
-// Write a class called Burger, a class called PubBurger that extends it, and a driver class called
-// BurgerMain that proves the functionality listed below . Burger must contain boolean fields called
-// ketchup, mustard, pickles, onion, mayo, lettuce, tomato and cheese. It must
-// also contain an integer field called patties. PubBurgers have two additional fields, both
-// Strings, called FancySauce and FancyBun respectively. Tomatoes cost $.25, cheese costs $.50,
-// and burgers start at $4.00, with $1 added for each patty after 1, maximum 3. If a burger is a pub burger,
-// it sh/*ould cost $2 more than a burger with exactly the same condiments. Two Burgers are equal if their
-// condiments and status as a PubBurger are all the same.
-// You must:
-// 1. Follow the syntax template for well-encapsulated classes.
-// 2. Include the private fields listed above.
-// 3. Have constructors that re-implement the default constructor and allow a user to set all fields.
-// 4. Implement getPrice(), equals(), and toString()
-// 5. Have accessors and mutators for each field.
-// 6. Include a driver class called BurgerMain that proves you have completed the work above.
-// 7. Save all of your w*/ork in a folder called &lt;lastName&gt;Burger.
-//in equalls, you need to compare 3 burger\s
-
-//look at NumWord.java
-
-
+// Burger class, set variables, price, print what toppings each burger has
+// and check if burgers are equal 
 
 public class Burger {
     private boolean ketchup;
@@ -45,6 +25,7 @@ public class Burger {
         setValues(k, mu, pi, o, ma, l, t, c, pa);
     }
 
+    //set boolean values of each topping
     public void setValues(boolean k, boolean mu, boolean pi, boolean o, boolean ma,
                           boolean l, boolean t, boolean c, int pa) {
         setKetchup(k);
@@ -58,6 +39,7 @@ public class Burger {
         setPatties(pa);
     }
 
+    
     public void setKetchup(boolean ketchup) {
         this.ketchup = ketchup;
     }
@@ -114,6 +96,7 @@ public class Burger {
     }
 
 
+    //set price of burger, add cost's if has certain toppings
     public double getPrice() {
         double price = 4.00;
         price += patties;
@@ -125,15 +108,17 @@ public class Burger {
         }
         return price;
     }
+
+    //print true/false for what toppings it has
     public String toString() {
         return "Ketchup: " + ketchup + ", Mustard: " + mustard + ", \nPickles: " + pickles
                 + ", Onion: " + onion + ", Mayo: " + mayo + ", \nLettuce: " + lettuce
                 + ", Tomato: " + tomato + ", Chesse: " + chesse + ", \nPatties: " + patties;
     }
 
-
+    //check to see if 2 burgers are equal
     public boolean equals(Object o) {
-        if( o instanceof Burger) {
+        if(o instanceof Burger) {
             Burger other = (Burger)o;
             return this.ketchup == other.ketchup && this.mustard == other.mustard &&
             this.pickles == other.pickles && this.onion == other.onion &&
