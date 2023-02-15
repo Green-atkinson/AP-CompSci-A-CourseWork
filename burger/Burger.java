@@ -2,15 +2,15 @@
 // and check if burgers are equal 
 
 public class Burger {
-    private boolean ketchup;
-    private boolean mustard;
-    private boolean pickles;
-    private boolean onion;
-    private boolean mayo;
-    private boolean lettuce;
-    private boolean tomato;
-    private boolean chesse;
-    private int patties = 1;
+    protected boolean ketchup;
+    protected boolean mustard;
+    protected boolean pickles;
+    protected boolean onion;
+    protected boolean mayo;
+    protected boolean lettuce;
+    protected boolean tomato;
+    protected boolean chesse;
+    protected int patties = 1;
 
 
     public Burger() {

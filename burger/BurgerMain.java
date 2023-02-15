@@ -26,7 +26,10 @@ public class BurgerMain{
         Burger burger1 = new Burger();
         Burger burger2 = new Burger(true, true, true, true, true, true, false, true, 3);
         Burger burger3 = burger2;
-        PubBurger burger4 = new PubBurger(true, true, true, false, true, false, false, true, 1, "A1 Steak Suse", "Buttered & toasted honey glazed whole white bread");
+        PubBurger burger4 = new PubBurger(false, false, true, true, true, false, false, true, 2, "A1 Steak Sause", "Buttered & Toasted Honey Glazed Whole White Bread");
+        PubBurger burger5 = burger4;
+        PubBurger burger6 = new PubBurger(false, false, false, false, true, false, false, false, 2, "Honey Mustard", "Pretzel Bun");
+
 
         //Prints out a comparison of all 4 burgers
         System.out.println("BUGER COMPARISON");
@@ -39,6 +42,12 @@ public class BurgerMain{
         System.out.println(burger2.equals(burger1));
         System.out.println("Is Burger 4 equal to Burger 3?");
         System.out.println(burger4.equals(burger3));
+        System.out.println("Is Burger 6 equal to Burger 5?");
+        System.out.println(burger6.equals(burger5));
+        System.out.println("Is Burger 4 equal to Burger 6?");
+        System.out.println(burger4.equals(burger6));
+        System.out.println("Is Burger 5 equal to Burger 4?");
+        System.out.println(burger5.equals(burger4));
         System.out.println();
         System.out.println();
 
@@ -49,7 +58,6 @@ public class BurgerMain{
         System.out.println(burger1);
         System.out.println();
         System.out.println();
-
 
         System.out.println("BURGER 2");
         System.out.println();
@@ -65,12 +73,25 @@ public class BurgerMain{
         System.out.println();
         System.out.println();
 
-        System.out.println("BURGER 4");
+        System.out.println("PUB BURGER 4");
         System.out.println();
         System.out.printf("$%.2f ", burger4.getPrice());
         System.out.println(burger4);
         System.out.println();
         System.out.println();
 
+        System.out.println("PUB BURGER 5");
+        System.out.println();
+        System.out.printf("$%.2f ", burger5.getPrice());
+        System.out.println(burger5);
+        System.out.println();
+        System.out.println();
+
+        System.out.println("PUB BURGER 6");
+        System.out.println();
+        System.out.printf("$%.2f ", burger6.getPrice());
+        System.out.println(burger6);
+        System.out.println();
+        System.out.println();
     }
 }

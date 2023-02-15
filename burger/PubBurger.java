@@ -46,11 +46,12 @@ public class PubBurger extends Burger {
     //check to see if 2 burgers are equal
     public boolean equals(Object o) {
         if(o instanceof PubBurger) {
-            Burger other = (Burger)o;
+            PubBurger other = (PubBurger)o;
             return this.ketchup == other.ketchup && this.mustard == other.mustard &&
             this.pickles == other.pickles && this.onion == other.onion &&
             this.mayo == other.mayo && this.lettuce == other.lettuce && this.tomato ==
-            other.tomato && this.chesse == other.chesse && this.patties == other.patties;
+            other.tomato && this.chesse == other.chesse && this.patties == other.patties
+            && this.fancySauce == other.fancySauce && this.fancyBun == other.fancyBun;
         } else {
             return false;
         }
