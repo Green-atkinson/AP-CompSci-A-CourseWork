@@ -1,6 +1,6 @@
 # Contains, Topic
 
-Contains: (Constructors)(Inheritance w/ Superclass & Subclass)(Abstraction & Encapsulate on methods/classes)(for loop)(Throw File Exeption)
+Contains: (Constructors)(Inheritance w/ Superclass & Subclass)(Abstraction, Encapsulation, and Mutators on methods/classes)(for loop)(Throw File Exeption)
 
 Topic: Demonstrates how to use inheritances with Client program to use the Burger & PubBurger classes
 
